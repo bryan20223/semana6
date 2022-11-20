@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana6.VentanaIngreso"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Ventana de registro" FontSize="20" HorizontalOptions="Center"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="ingrese el codigo" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtcodigo" Placeholder="codigo" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="ingrese su nombre" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Placeholder="codigo"  Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="ingrese su apellido" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtapellido" Placeholder="codigo"  Grid.Row="2" Grid.Column="1"/>
+
+
+                <Label Text="ingrese su edad" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtedad" Placeholder="codigo"  Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+                <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" Grid.Row="4" Grid.Column="0"/>
+                <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" Grid.Row="4" Grid.Column="1"/>
+
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
